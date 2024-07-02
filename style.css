@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(145deg, #e53434, #ce3b3b);
+  box-shadow: 0 0 10px rgba(212, 37, 37, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #f0f0f0;
+  padding: 10px;
+  font-size: 35px;
+  font-style: Copperplate;
+  border: 1px solid #cc7f7f;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 10px 20px #e29ca7;}
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.search-box button:hover {
+  background-color: #0056b3;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.routeSearchedList button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(145deg, #64b5f6, #42a5f5);
+  box-shadow: 5px 5px 10px #1976d2, -5px -5px 10px #90caf9;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.routeSearchedList button:hover {
+  background-color: #e2e6ea;
+}
+
+.stopList .stopNumber {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.stopList .stopNumber:hover {
+  background-color: #dd7936;box-shadow: 5px 5px 10px #d07d39, -5px -5px 10px #a5d6a7;
+}
+
+.etaList {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+}
+
+.etaItem {
+  padding: 10px;
+  margin-bottom: 5px;
+  background: linear-gradient(145deg, #eebd68, #e8bc5e);
+  box-shadow: 10px 10px 20px #e0944d, -5px -5px 10px #db7843;
+  border: 1px solid #a2a8ae;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  animation: mymove 5s infinite;
+}
+
+.etaItem span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.alertMessage {
+  color: red;
+  font-weight: bold;
+}
+
+.history {
+  margin-top: 20px;
+}
+
+.history h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history li {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.history li:hover {
+  background-color: #e2e6ea;
+}
+
+.etaComparison {
+  margin-top: 20px;
+}
+
+.etaComparison h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.etaComparisonList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.etaComparisonItem {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.etaComparisonItem span {
+  font-weight: bold;
+}

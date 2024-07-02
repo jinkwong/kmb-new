@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus 路線查詢</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>KMB 路線查詢</h1>
+      <div class="search-box">
+        <input type="text" id="routeInput" placeholder="Enter bus route">
+        <button id="searchBtn">Search</button>
+        <div id="suggestions" class="suggestions"></div>
+      </div>
+      <div class="results">
+        <div class="routeSearchedList"></div>
+        <div class="stopList"></div>
+        <div class="alertContainer"></div>
+      </div>
+      <div class="history">
+        <h2>查詢歷史</h2>
+        <ul id="historyList"></ul>
+      </div>
+      <div class="etaComparison">
+  
+        <div id="etaComparisonList"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
